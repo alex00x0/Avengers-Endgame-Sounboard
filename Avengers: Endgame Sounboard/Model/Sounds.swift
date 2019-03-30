@@ -10,5 +10,5 @@ import Foundation
 
 struct Sounds{
     var statement: String
-    var file: URL
+    //var file: URL
 }

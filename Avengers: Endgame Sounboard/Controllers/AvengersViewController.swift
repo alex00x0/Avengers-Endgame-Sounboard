@@ -11,10 +11,14 @@ import UIKit
 class AvengersViewController: UIViewController {
     
     var avengers : [Chars] = [
+//        Chars(name: "CAPTAIN AMERICA", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
+//            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)]),
+//        Chars(name: "IRON MAN", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
+//            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)])
         Chars(name: "CAPTAIN AMERICA", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
-            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)]),
+                Sounds(statement: "A")]),
         Chars(name: "IRON MAN", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
-            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)])
+            Sounds(statement: "A")])
     ]
         
 //        ["CAPTAIN AMERICA", "IRON MAN", "BLACK WIDOW", "THOR", "HULK", "HAWKEYE", "ANT-MAN", "CAPTAIN MARVEL", "NEBULA", "VALKYRIE", "WAR MACHINE", "ROCKET"]
@@ -33,7 +37,6 @@ class AvengersViewController: UIViewController {
         layout.itemSize = CGSize(width: width, height: width)
         
     }
-    
     var lastRowSelected : Int?
 
 }
@@ -53,7 +56,7 @@ extension AvengersViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
         func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        lastRowSelected = indexPath.row
+        lastRowSelected = indexPath.item
         self.performSegue(withIdentifier: "openToChar", sender: nil)
     }
     

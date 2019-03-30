@@ -10,6 +10,7 @@ import UIKit
 
 class AvengerCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var avengerNameLabel: UILabel!
     @IBOutlet weak var avengerImage: UIImageView!
+    @IBOutlet weak var avengerNameLabel: UILabel!
+
 }

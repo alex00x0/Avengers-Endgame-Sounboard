@@ -11,10 +11,14 @@ import UIKit
 class FallenViewController: UIViewController {
     
     var fallen : [Chars] = [
+//        Chars(name: "SPIDER-MAN", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
+//            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)]),
+//        Chars(name: "SHURI", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
+//            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)])
         Chars(name: "SPIDER-MAN", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
-            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)]),
+            Sounds(statement: "A")]),
         Chars(name: "SHURI", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
-            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)])
+            Sounds(statement: "A")])
     ]
         
 //      ["SPIDER-MAN"  , "SHURI", "BLACK PANTHER", "DR.STRANGE", "NICK FURY", "VISION", "SCARLET WITCH", "GAMORA", "DRAX", "WINTER SOLDIER", "FALCON", "STAR-LORD", "LOKI", "GROOT"]
@@ -24,8 +28,6 @@ class FallenViewController: UIViewController {
     
     @IBAction func swipeRightDone(_ sender: Any) {
         dismiss(animated: true, completion: nil)
-    }
-    @IBAction func cellButtonTapped(_ sender: Any) {
     }
     
     override func viewDidLoad() {
@@ -55,7 +57,7 @@ extension FallenViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        lastRowSelected = indexPath.row
+        lastRowSelected = indexPath.item
         self.performSegue(withIdentifier: "openToChar", sender: nil)
     }
     
