@@ -35,7 +35,6 @@ class FallenViewController: UIViewController {
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)
     }
-    
     var lastRowSelected : Int?
 
 }
