@@ -74,7 +74,7 @@
 				C97CC3B2224D7EC600576A3B /* AppDelegate.swift */,
 				C910F586224FD906009C1B0E /* A.aifc */,
 				C97CC3C6224E387000576A3B /* Model */,
-				C97CC3C5224E385D00576A3B /* ViewCells */,
+				C97CC3C5224E385D00576A3B /* Views */,
 				C97CC3C4224E380300576A3B /* Controllers */,
 				C97CC3B6224D7EC600576A3B /* Main.storyboard */,
 				C97CC3B9224D7EC600576A3B /* Assets.xcassets */,
@@ -95,14 +95,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		C97CC3C5224E385D00576A3B /* ViewCells */ = {
+		C97CC3C5224E385D00576A3B /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				C910F578224ED0CD009C1B0E /* AvengerCollectionViewCell.swift */,
 				C910F57A224ED0E2009C1B0E /* FallenCollectionViewCell.swift */,
 				C910F584224F922B009C1B0E /* CharCollectionViewCell.swift */,
 			);
-			path = ViewCells;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		C97CC3C6224E387000576A3B /* Model */ = {

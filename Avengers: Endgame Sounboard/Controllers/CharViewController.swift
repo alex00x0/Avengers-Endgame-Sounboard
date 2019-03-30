@@ -8,6 +8,9 @@
 
 import UIKit
 
+//@IBOutlet weak var charNameHeader: UILabel!
+
+
 class CharViewController: UIViewController {
     
     var sound: Sounds?
@@ -16,18 +19,21 @@ class CharViewController: UIViewController {
 
     @IBOutlet weak var charCollectionView: UICollectionView!
     
+    @IBOutlet weak var charNameLabel: UILabel!
     @IBAction func unwindWithSwipe(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        charNameLabel.text = charName
         let width = (view.frame.width - 40) / 2
         let layout = charCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)
         
         charCollectionView.delegate = self
         charCollectionView.dataSource = self
+        charCollectionView.reloadData()
     }
     
 }

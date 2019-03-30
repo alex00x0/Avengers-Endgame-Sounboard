@@ -58,37 +58,23 @@ extension FallenViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         lastItemSelectedF = indexPath.item
-
         self.performSegue(withIdentifier: "openToCharF", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "openToCharF" {
-            let vc = segue.identifier
-            if let indexPath = collectionView?.indexPathsForSelectedItems {
-            vc.event = fallen[indexPath.row]
-            }
-        } else  {
-            print("unexpected segue indentifier - fallen")
-        }
-    }
-        /*
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let identifier = segue.identifier else {return}
+        guard let identifier = segue.identifier else { return }
         
-        switch identifier{
+        switch identifier {
         case "openToCharF":
             
-            guard let indexPath = collectionView.indexPathsForSelectedItems else {return}
-            let sounds = fallen[indexPath].sounds
-            
+            //guard let indexPath = collectionView.indexPathsForSelectedItems else {return}
+            //let sounds = fallen[lastItemSelectedF!].sounds
             let destination = segue.destination as! CharViewController
-            destination.sounds = sounds
-            destination.charName = fallen[lastItemSelectedF!].name
+            //destination.sounds = sounds
+            destination.charName = fallen[lastItemSelectedF ?? 0].name
         default:
             print("unexpected segue identifier")
         }
     }
- */
-    
+ 
 }

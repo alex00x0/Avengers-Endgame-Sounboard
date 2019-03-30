@@ -254,17 +254,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="b4F-hB-eiC">
-                                <rect key="frame" x="0.0" y="44" width="414" height="808"/>
+                                <rect key="frame" x="20" y="198.5" width="374" height="663.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JP3-tN-2vC">
                                     <size key="itemSize" width="100" height="100"/>
-                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="soundCell" id="ZcL-D8-C3v" customClass="CharCollectionViewCell" customModule="Avengers__Endgame_Sounboard" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="100" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -279,44 +279,36 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="To7-tZ-h9D" firstAttribute="centerX" secondItem="ZcL-D8-C3v" secondAttribute="centerX" id="4q5-lN-6wW"/>
-                                            <constraint firstItem="To7-tZ-h9D" firstAttribute="centerY" secondItem="ZcL-D8-C3v" secondAttribute="centerY" id="7VX-u6-n2p"/>
+                                            <constraint firstItem="To7-tZ-h9D" firstAttribute="centerY" secondItem="ZcL-D8-C3v" secondAttribute="centerY" id="UtC-1D-StG"/>
+                                            <constraint firstItem="To7-tZ-h9D" firstAttribute="centerX" secondItem="ZcL-D8-C3v" secondAttribute="centerX" id="YNh-MU-41k"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="statementSound" destination="To7-tZ-h9D" id="GgZ-PA-wFR"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="charNameHeader" id="dy4-an-8bV">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Char Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJc-ru-haw">
-                                            <rect key="frame" x="164" y="14.5" width="86" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="sJc-ru-haw" firstAttribute="centerY" secondItem="dy4-an-8bV" secondAttribute="centerY" id="DRH-CV-chi"/>
-                                        <constraint firstItem="sJc-ru-haw" firstAttribute="centerX" secondItem="dy4-an-8bV" secondAttribute="centerX" id="Gdn-Su-XLk"/>
-                                    </constraints>
-                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="KOl-tP-uQs" id="CGC-1f-aru"/>
                                     <outlet property="delegate" destination="KOl-tP-uQs" id="N3D-CF-EsJ"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAf-Ty-qM4">
+                                <rect key="frame" x="20" y="153" width="233" height="37.5"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="b4F-hB-eiC" firstAttribute="trailing" secondItem="Cxz-Es-2c7" secondAttribute="trailing" id="LiI-K7-kld"/>
-                            <constraint firstItem="b4F-hB-eiC" firstAttribute="leading" secondItem="Cxz-Es-2c7" secondAttribute="leading" id="QEu-Mg-ayi"/>
-                            <constraint firstItem="b4F-hB-eiC" firstAttribute="centerY" secondItem="fhO-GL-EQb" secondAttribute="centerY" id="Urg-7S-RSQ"/>
-                            <constraint firstItem="b4F-hB-eiC" firstAttribute="centerX" secondItem="fhO-GL-EQb" secondAttribute="centerX" id="o6i-WK-zcf"/>
-                            <constraint firstItem="b4F-hB-eiC" firstAttribute="top" secondItem="Cxz-Es-2c7" secondAttribute="top" id="qhA-A5-OlF"/>
+                            <constraint firstItem="b4F-hB-eiC" firstAttribute="leading" secondItem="Cxz-Es-2c7" secondAttribute="leading" constant="20" id="BKn-Rz-ghc"/>
+                            <constraint firstItem="hAf-Ty-qM4" firstAttribute="top" secondItem="Cxz-Es-2c7" secondAttribute="top" constant="109" id="MiR-Na-BD4"/>
+                            <constraint firstItem="Cxz-Es-2c7" firstAttribute="trailing" secondItem="b4F-hB-eiC" secondAttribute="trailing" constant="20" id="TWh-3q-PkB"/>
+                            <constraint firstItem="b4F-hB-eiC" firstAttribute="top" secondItem="hAf-Ty-qM4" secondAttribute="bottom" constant="8" id="bl4-cm-ukI"/>
+                            <constraint firstItem="b4F-hB-eiC" firstAttribute="bottom" secondItem="Cxz-Es-2c7" secondAttribute="bottom" id="i0k-he-qlm"/>
+                            <constraint firstItem="Cxz-Es-2c7" firstAttribute="trailing" secondItem="hAf-Ty-qM4" secondAttribute="trailing" constant="161" id="rfx-td-AOp"/>
+                            <constraint firstItem="hAf-Ty-qM4" firstAttribute="leading" secondItem="Cxz-Es-2c7" secondAttribute="leading" constant="20" id="yg3-Oz-03M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cxz-Es-2c7"/>
                         <connections>
@@ -325,6 +317,7 @@
                     </view>
                     <connections>
                         <outlet property="charCollectionView" destination="b4F-hB-eiC" id="vSC-eu-Eg9"/>
+                        <outlet property="charNameLabel" destination="hAf-Ty-qM4" id="jQK-Dv-wnG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFX-T4-NQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
