@@ -35,9 +35,10 @@ class AvengersViewController: UIViewController {
         let width = (view.frame.width - 40) / 2
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)
-        
+        collectionView.reloadData()
+
     }
-    var lastRowSelected : Int?
+    var lastItemSelectedA : Int?
 
 }
 
@@ -56,27 +57,30 @@ extension AvengersViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
         func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        lastRowSelected = indexPath.item
-        self.performSegue(withIdentifier: "openToChar", sender: nil)
+        lastItemSelectedA = indexPath.item
+
+            self.performSegue(withIdentifier: "openToCharA", sender: nil)
     }
-    
+    /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else { return }
         
         switch identifier {
-        case "openToChar":
+        case "openToCharA":
             
             guard let indexPath = collectionView.indexPathsForSelectedItems else {return}
-            let sounds = avengers[indexPath.count].sounds
+            let sounds = avengers[indexPath.].sounds
             
             let destination = segue.destination as! CharViewController
             destination.sounds = sounds
-            destination.charName = avengers[lastRowSelected!].name
+            destination.charName = avengers[lastItemSelectedA!].name
         default:
             print("unexpected segue identifier")
         }
 
+
     }
+  */
 
 
 }

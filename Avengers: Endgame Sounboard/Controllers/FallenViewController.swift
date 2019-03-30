@@ -32,12 +32,12 @@ class FallenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         let width = (view.frame.width - 40) / 2
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)
+        collectionView.reloadData()
     }
-    var lastRowSelected : Int?
+    var lastItemSelectedF : Int?
 
 }
 
@@ -57,25 +57,38 @@ extension FallenViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        lastRowSelected = indexPath.item
-        self.performSegue(withIdentifier: "openToChar", sender: nil)
+        lastItemSelectedF = indexPath.item
+
+        self.performSegue(withIdentifier: "openToCharF", sender: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "openToCharF" {
+            let vc = segue.identifier
+            if let indexPath = collectionView?.indexPathsForSelectedItems {
+            vc.event = fallen[indexPath.row]
+            }
+        } else  {
+            print("unexpected segue indentifier - fallen")
+        }
+    }
+        /*
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifier = segue.identifier else {return}
         
         switch identifier{
-        case "openToChar":
+        case "openToCharF":
             
             guard let indexPath = collectionView.indexPathsForSelectedItems else {return}
-            let sounds = fallen[indexPath.count].sounds
+            let sounds = fallen[indexPath].sounds
             
             let destination = segue.destination as! CharViewController
             destination.sounds = sounds
-            destination.charName = fallen[lastRowSelected!].name
+            destination.charName = fallen[lastItemSelectedF!].name
         default:
             print("unexpected segue identifier")
         }
     }
+ */
     
 }

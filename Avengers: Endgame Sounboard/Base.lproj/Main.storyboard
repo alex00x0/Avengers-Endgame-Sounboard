@@ -108,6 +108,7 @@
                                         <connections>
                                             <outlet property="fallenImage" destination="wPB-cs-Ts1" id="7q4-hP-07Z"/>
                                             <outlet property="fallenNameLabel" destination="eJL-do-u7u" id="kmQ-ln-OVX"/>
+                                            <segue destination="KOl-tP-uQs" kind="show" identifier="openToCharF" id="FoG-SK-2G2"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -199,7 +200,7 @@
                                         <connections>
                                             <outlet property="avengerImage" destination="GMf-FW-EQt" id="Dfx-G5-Z7I"/>
                                             <outlet property="avengerNameLabel" destination="sIu-1X-2Fz" id="ZNk-Wm-Q93"/>
-                                            <segue destination="KOl-tP-uQs" kind="show" identifier="openToChar" id="paI-Tw-o9e"/>
+                                            <segue destination="KOl-tP-uQs" kind="show" identifier="openToCharA" id="paI-Tw-o9e"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -253,7 +254,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="b4F-hB-eiC">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JP3-tN-2vC">
                                     <size key="itemSize" width="100" height="100"/>
@@ -311,10 +312,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="b4F-hB-eiC" firstAttribute="trailing" secondItem="Cxz-Es-2c7" secondAttribute="trailing" id="JPK-41-Vk7"/>
-                            <constraint firstItem="b4F-hB-eiC" firstAttribute="leading" secondItem="Cxz-Es-2c7" secondAttribute="leading" id="Vzx-7a-maG"/>
-                            <constraint firstItem="b4F-hB-eiC" firstAttribute="top" secondItem="Cxz-Es-2c7" secondAttribute="top" id="iwK-ij-KK8"/>
-                            <constraint firstItem="b4F-hB-eiC" firstAttribute="bottom" secondItem="Cxz-Es-2c7" secondAttribute="bottom" id="uGF-ZA-ikR"/>
+                            <constraint firstItem="b4F-hB-eiC" firstAttribute="trailing" secondItem="Cxz-Es-2c7" secondAttribute="trailing" id="LiI-K7-kld"/>
+                            <constraint firstItem="b4F-hB-eiC" firstAttribute="leading" secondItem="Cxz-Es-2c7" secondAttribute="leading" id="QEu-Mg-ayi"/>
+                            <constraint firstItem="b4F-hB-eiC" firstAttribute="centerY" secondItem="fhO-GL-EQb" secondAttribute="centerY" id="Urg-7S-RSQ"/>
+                            <constraint firstItem="b4F-hB-eiC" firstAttribute="centerX" secondItem="fhO-GL-EQb" secondAttribute="centerX" id="o6i-WK-zcf"/>
+                            <constraint firstItem="b4F-hB-eiC" firstAttribute="top" secondItem="Cxz-Es-2c7" secondAttribute="top" id="qhA-A5-OlF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cxz-Es-2c7"/>
                         <connections>
@@ -322,7 +324,7 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="b4F-hB-eiC" id="izw-ys-ZCf"/>
+                        <outlet property="charCollectionView" destination="b4F-hB-eiC" id="vSC-eu-Eg9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFX-T4-NQT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -335,4 +337,7 @@
             <point key="canvasLocation" x="3337.68115942029" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="FoG-SK-2G2"/>
+    </inferredMetricsTieBreakers>
 </document>
