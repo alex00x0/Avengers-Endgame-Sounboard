@@ -35,7 +35,10 @@ class FallenViewController: UIViewController {
         let width = (view.frame.width - 40) / 2
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)
+    }
+    override func viewDidAppear(_ animated: Bool) {
         collectionView.reloadData()
+
     }
     var lastItemSelectedF : Int?
 
@@ -56,24 +59,12 @@ extension FallenViewController: UICollectionViewDelegate, UICollectionViewDataSo
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        lastItemSelectedF = indexPath.item
-        self.performSegue(withIdentifier: "openToCharF", sender: nil)
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let identifier = segue.identifier else { return }
-        
-        switch identifier {
-        case "openToCharF":
-            
-            //guard let indexPath = collectionView.indexPathsForSelectedItems else {return}
-            //let sounds = fallen[lastItemSelectedF!].sounds
+        if segue.identifier == "openToCharF" {
+            let cell = sender as! UICollectionViewCell
+            let indexPath = collectionView.indexPath(for: cell)!
             let destination = segue.destination as! CharViewController
-            //destination.sounds = sounds
-            destination.charName = fallen[lastItemSelectedF ?? 0].name
-        default:
-            print("unexpected segue identifier")
+            destination.charName = fallen[indexPath.item].name
         }
     }
  

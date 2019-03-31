@@ -108,7 +108,7 @@
                                         <connections>
                                             <outlet property="fallenImage" destination="wPB-cs-Ts1" id="7q4-hP-07Z"/>
                                             <outlet property="fallenNameLabel" destination="eJL-do-u7u" id="kmQ-ln-OVX"/>
-                                            <segue destination="KOl-tP-uQs" kind="show" identifier="openToCharF" id="FoG-SK-2G2"/>
+                                            <segue destination="KOl-tP-uQs" kind="presentation" identifier="openToCharF" id="UcF-sf-x5y"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -200,7 +200,7 @@
                                         <connections>
                                             <outlet property="avengerImage" destination="GMf-FW-EQt" id="Dfx-G5-Z7I"/>
                                             <outlet property="avengerNameLabel" destination="sIu-1X-2Fz" id="ZNk-Wm-Q93"/>
-                                            <segue destination="KOl-tP-uQs" kind="show" identifier="openToCharA" id="paI-Tw-o9e"/>
+                                            <segue destination="KOl-tP-uQs" kind="show" identifier="openToCharA" id="9Yt-xi-P2X"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -293,7 +293,7 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAf-Ty-qM4">
-                                <rect key="frame" x="20" y="153" width="233" height="37.5"/>
+                                <rect key="frame" x="20" y="153" width="334" height="37.5"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -307,7 +307,7 @@
                             <constraint firstItem="Cxz-Es-2c7" firstAttribute="trailing" secondItem="b4F-hB-eiC" secondAttribute="trailing" constant="20" id="TWh-3q-PkB"/>
                             <constraint firstItem="b4F-hB-eiC" firstAttribute="top" secondItem="hAf-Ty-qM4" secondAttribute="bottom" constant="8" id="bl4-cm-ukI"/>
                             <constraint firstItem="b4F-hB-eiC" firstAttribute="bottom" secondItem="Cxz-Es-2c7" secondAttribute="bottom" id="i0k-he-qlm"/>
-                            <constraint firstItem="Cxz-Es-2c7" firstAttribute="trailing" secondItem="hAf-Ty-qM4" secondAttribute="trailing" constant="161" id="rfx-td-AOp"/>
+                            <constraint firstItem="Cxz-Es-2c7" firstAttribute="trailing" secondItem="hAf-Ty-qM4" secondAttribute="trailing" constant="60" id="rfx-td-AOp"/>
                             <constraint firstItem="hAf-Ty-qM4" firstAttribute="leading" secondItem="Cxz-Es-2c7" secondAttribute="leading" constant="20" id="yg3-Oz-03M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Cxz-Es-2c7"/>
@@ -331,6 +331,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FoG-SK-2G2"/>
+        <segue reference="9Yt-xi-P2X"/>
     </inferredMetricsTieBreakers>
 </document>

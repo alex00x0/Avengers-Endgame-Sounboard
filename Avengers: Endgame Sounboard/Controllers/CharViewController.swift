@@ -35,6 +35,9 @@ class CharViewController: UIViewController {
         charCollectionView.dataSource = self
         charCollectionView.reloadData()
     }
+    override func viewDidAppear(_ animated: Bool) {
+        charCollectionView.reloadData()
+    }
     
 }
 
