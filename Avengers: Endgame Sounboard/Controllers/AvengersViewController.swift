@@ -41,9 +41,6 @@ class AvengersViewController: UIViewController {
         collectionView.reloadData()
 
     }
-//    var lastItemSelectedA : Int?
-//    var lastSelectedAIndexPath: IndexPath?
-
 
 }
 
@@ -67,6 +64,7 @@ extension AvengersViewController: UICollectionViewDelegate, UICollectionViewData
             let indexPath = collectionView.indexPath(for: cell)!
             let destination = segue.destination as! CharViewController
             destination.charName = avengers[indexPath.item].name
+            destination.sounds = avengers[indexPath.item].sounds
         }
     }
 

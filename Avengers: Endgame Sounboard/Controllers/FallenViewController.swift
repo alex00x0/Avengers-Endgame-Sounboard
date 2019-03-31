@@ -40,7 +40,6 @@ class FallenViewController: UIViewController {
         collectionView.reloadData()
 
     }
-    var lastItemSelectedF : Int?
 
 }
 
@@ -59,13 +58,14 @@ extension FallenViewController: UICollectionViewDelegate, UICollectionViewDataSo
         return cell
     }
     
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "openToCharF" {
             let cell = sender as! UICollectionViewCell
             let indexPath = collectionView.indexPath(for: cell)!
             let destination = segue.destination as! CharViewController
             destination.charName = fallen[indexPath.item].name
+            destination.sounds = fallen[indexPath.item].sounds
         }
     }
- 
 }
