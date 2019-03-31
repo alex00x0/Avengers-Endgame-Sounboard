@@ -33,10 +33,6 @@ class AvengersViewController: UIViewController {
         layout.itemSize = CGSize(width: width, height: width)
 
     }
-    override func viewDidAppear(_ animated: Bool) {
-        collectionView.reloadData()
-
-    }
 
 }
 
