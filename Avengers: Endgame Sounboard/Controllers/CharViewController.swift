@@ -28,10 +28,9 @@ class CharViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         charNameLabel.text = charName
-        //collectionViewCell.backgroundColor = cellColor
-        let width = (view.frame.width - 40) / 2
         let layout = charCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.itemSize = CGSize(width: width, height: width)
+        let width = (view.frame.width - 60) / 2
+        layout.itemSize = CGSize(width: width, height: width/1.8)
         
         charCollectionView.delegate = self
         charCollectionView.dataSource = self
@@ -50,11 +49,9 @@ extension CharViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "soundCell", for: indexPath) as! CharCollectionViewCell
-        cell.contentView.layer.cornerRadius = 10
-        cell.contentView.layer.borderWidth = 1.0
-        
-        cell.contentView.layer.borderColor = UIColor.clear.cgColor
-        cell.contentView.layer.masksToBounds = true
+        cell.layer.cornerRadius = 5
+
+        cell.contentView.layer.masksToBounds = false
         cell.backgroundColor = cellColor
         
         let chars = sounds[indexPath.item]

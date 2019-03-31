@@ -16,9 +16,9 @@ class FallenViewController: UIViewController {
 //        Chars(name: "SHURI", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
 //            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)])
         Chars(name: "SPIDER-MAN", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.red, sounds: [
-            Sounds(statement: "A")]),
-        Chars(name: "SHURI", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.green, sounds: [
-            Sounds(statement: "A")])
+            Sounds(statement: "A"), Sounds(statement: "B")]),
+        Chars(name: "SHURI", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.white, sounds: [
+            Sounds(statement: "A"), Sounds(statement: "B")])
     ]
         
 //      ["SPIDER-MAN"  , "SHURI", "BLACK PANTHER", "DR.STRANGE", "NICK FURY", "VISION", "SCARLET WITCH", "GAMORA", "DRAX", "WINTER SOLDIER", "FALCON", "STAR-LORD", "LOKI", "GROOT"]

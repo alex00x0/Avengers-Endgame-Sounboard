@@ -16,9 +16,9 @@ class AvengersViewController: UIViewController {
 //        Chars(name: "IRON MAN", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
 //            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)])
         Chars(name: "CAPTAIN AMERICA", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.red, sounds: [
-                Sounds(statement: "A")]),
+            Sounds(statement: "A"), Sounds(statement: "B")]),
         Chars(name: "IRON MAN", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.yellow, sounds: [
-            Sounds(statement: "A")])
+            Sounds(statement: "A"), Sounds(statement: "B")])
     ]
         
 //        ["CAPTAIN AMERICA", "IRON MAN", "BLACK WIDOW", "THOR", "HULK", "HAWKEYE", "ANT-MAN", "CAPTAIN MARVEL", "NEBULA", "VALKYRIE", "WAR MACHINE", "ROCKET"]
