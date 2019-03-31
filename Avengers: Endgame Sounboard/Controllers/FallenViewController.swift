@@ -15,9 +15,9 @@ class FallenViewController: UIViewController {
 //            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)]),
 //        Chars(name: "SHURI", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
 //            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)])
-        Chars(name: "SPIDER-MAN", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
+        Chars(name: "SPIDER-MAN", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.red, sounds: [
             Sounds(statement: "A")]),
-        Chars(name: "SHURI", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
+        Chars(name: "SHURI", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.green, sounds: [
             Sounds(statement: "A")])
     ]
         
@@ -64,6 +64,7 @@ extension FallenViewController: UICollectionViewDelegate, UICollectionViewDataSo
             let cell = sender as! UICollectionViewCell
             let indexPath = collectionView.indexPath(for: cell)!
             let destination = segue.destination as! CharViewController
+            destination.cellColor = fallen[indexPath.item].color
             destination.charName = fallen[indexPath.item].name
             destination.sounds = fallen[indexPath.item].sounds
         }

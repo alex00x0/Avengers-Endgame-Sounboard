@@ -11,7 +11,7 @@ import UIKit
 class CharCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var statementSound: UILabel!
-    
     var file: CharViewController?
+
 
 }

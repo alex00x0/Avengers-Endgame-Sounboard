@@ -16,6 +16,7 @@ class CharViewController: UIViewController {
     var sound: Sounds?
     var sounds = [Sounds]()
     var charName: String!
+    var cellColor : UIColor!
 
     @IBOutlet weak var charCollectionView: UICollectionView!
     
@@ -27,6 +28,7 @@ class CharViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         charNameLabel.text = charName
+        //collectionViewCell.backgroundColor = cellColor
         let width = (view.frame.width - 40) / 2
         let layout = charCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)

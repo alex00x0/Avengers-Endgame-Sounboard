@@ -15,9 +15,9 @@ class AvengersViewController: UIViewController {
 //            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)]),
 //        Chars(name: "IRON MAN", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
 //            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)])
-        Chars(name: "CAPTAIN AMERICA", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
+        Chars(name: "CAPTAIN AMERICA", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.red, sounds: [
                 Sounds(statement: "A")]),
-        Chars(name: "IRON MAN", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
+        Chars(name: "IRON MAN", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.yellow, sounds: [
             Sounds(statement: "A")])
     ]
         
@@ -63,6 +63,7 @@ extension AvengersViewController: UICollectionViewDelegate, UICollectionViewData
             let cell = sender as! UICollectionViewCell
             let indexPath = collectionView.indexPath(for: cell)!
             let destination = segue.destination as! CharViewController
+            destination.cellColor = avengers[indexPath.item].color
             destination.charName = avengers[indexPath.item].name
             destination.sounds = avengers[indexPath.item].sounds
         }

@@ -12,6 +12,7 @@ import UIKit
 struct Chars {
     var name: String
     var image: UIImage
+    var color: UIColor
     var sounds: [Sounds]
     //AVAudioPlayer is a class that takes NSObjet as type
 }
