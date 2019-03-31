@@ -11,14 +11,10 @@ import UIKit
 class FallenViewController: UIViewController {
     
     var fallen : [Chars] = [
-//        Chars(name: "SPIDER-MAN", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
-//            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)]),
-//        Chars(name: "SHURI", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
-//            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)])
         Chars(name: "SPIDER-MAN", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.red, sounds: [
-            Sounds(statement: "A"), Sounds(statement: "B")]),
+            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!), Sounds(statement: "B", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)]),
         Chars(name: "SHURI", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.white, sounds: [
-            Sounds(statement: "A"), Sounds(statement: "B")])
+            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!), Sounds(statement: "B", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)])
     ]
         
 //      ["SPIDER-MAN"  , "SHURI", "BLACK PANTHER", "DR.STRANGE", "NICK FURY", "VISION", "SCARLET WITCH", "GAMORA", "DRAX", "WINTER SOLDIER", "FALCON", "STAR-LORD", "LOKI", "GROOT"]

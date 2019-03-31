@@ -11,14 +11,10 @@ import UIKit
 class AvengersViewController: UIViewController {
     
     var avengers : [Chars] = [
-//        Chars(name: "CAPTAIN AMERICA", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
-//            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)]),
-//        Chars(name: "IRON MAN", image: UIImage(imageLiteralResourceName: "all avengers"), sounds: [
-//            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)])
         Chars(name: "CAPTAIN AMERICA", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.red, sounds: [
-            Sounds(statement: "A"), Sounds(statement: "B")]),
+            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!), Sounds(statement: "B", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)]),
         Chars(name: "IRON MAN", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.yellow, sounds: [
-            Sounds(statement: "A"), Sounds(statement: "B")])
+            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!), Sounds(statement: "B", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)])
     ]
         
 //        ["CAPTAIN AMERICA", "IRON MAN", "BLACK WIDOW", "THOR", "HULK", "HAWKEYE", "ANT-MAN", "CAPTAIN MARVEL", "NEBULA", "VALKYRIE", "WAR MACHINE", "ROCKET"]
