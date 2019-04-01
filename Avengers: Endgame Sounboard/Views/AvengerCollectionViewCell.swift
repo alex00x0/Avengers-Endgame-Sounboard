@@ -12,5 +12,6 @@ class AvengerCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var avengerImage: UIImageView!
     @IBOutlet weak var avengerNameLabel: UILabel!
+    
 
 }

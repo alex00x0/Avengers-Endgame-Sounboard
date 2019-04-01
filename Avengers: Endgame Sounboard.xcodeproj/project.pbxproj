@@ -52,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C942C82B225161C20017BDFB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C910F586224FD906009C1B0E /* A.aifc */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		C97CC3A6224D7EC500576A3B = {
 			isa = PBXGroup;
 			children = (
@@ -72,7 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				C97CC3B2224D7EC600576A3B /* AppDelegate.swift */,
-				C910F586224FD906009C1B0E /* A.aifc */,
+				C942C82B225161C20017BDFB /* Sounds */,
 				C97CC3C6224E387000576A3B /* Model */,
 				C97CC3C5224E385D00576A3B /* Views */,
 				C97CC3C4224E380300576A3B /* Controllers */,

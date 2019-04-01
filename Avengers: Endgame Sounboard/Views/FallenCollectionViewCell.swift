@@ -12,6 +12,6 @@ class FallenCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var fallenImage: UIImageView!
     @IBOutlet weak var fallenNameLabel: UILabel!
-    
+
     
 }

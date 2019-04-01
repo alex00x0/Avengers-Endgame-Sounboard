@@ -45,6 +45,7 @@ extension FallenViewController: UICollectionViewDelegate, UICollectionViewDataSo
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FallenCell", for: indexPath) as! FallenCollectionViewCell
         let chars = fallen[indexPath.item]
         
+        
         cell.fallenNameLabel.text = chars.name
         cell.fallenImage.image = chars.image
         

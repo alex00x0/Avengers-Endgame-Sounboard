@@ -53,12 +53,17 @@ extension CharViewController: UICollectionViewDelegate, UICollectionViewDataSour
 
         cell.contentView.layer.masksToBounds = false
         cell.backgroundColor = cellColor
+
         
-        let chars = sounds[indexPath.item]
-        
-        cell.statementSound.text = chars.statement
+        let Soundz = sounds[indexPath.item]
+        cell.statementSound.text = Soundz.statement
         cell.file = self
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        print("Selected cell named: \(sounds[indexPath.item])")
+
     }
 }

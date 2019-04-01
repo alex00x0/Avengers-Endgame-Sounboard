@@ -31,7 +31,6 @@ class AvengersViewController: UIViewController {
         let width = (view.frame.width - 40) / 2
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)
-
     }
 
 }
