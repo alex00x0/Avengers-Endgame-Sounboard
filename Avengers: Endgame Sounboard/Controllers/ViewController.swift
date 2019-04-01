@@ -20,7 +20,4 @@ class ViewController: UIViewController {
     @IBOutlet weak var aliveButton: UIButton!
     @IBOutlet weak var deadButton: UIButton!
     
-//    @IBAction func dismissVC(_ sender: Any) {
-//        dismiss(animated: true, completion: nil)
-//    }
 }

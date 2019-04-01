@@ -12,9 +12,9 @@ class AvengersViewController: UIViewController {
     
     var avengers : [Chars] = [
         Chars(name: "CAPTAIN AMERICA", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.red, sounds: [
-            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!), Sounds(statement: "B", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)]),
+            Sounds(statement: "A", file: "A")]),
         Chars(name: "IRON MAN", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.yellow, sounds: [
-            Sounds(statement: "A", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!), Sounds(statement: "B", file: Bundle.main.url(forResource: "A", withExtension: "aifc")!)])
+            Sounds(statement: "B", file: "B")])
     ]
         
 //        ["CAPTAIN AMERICA", "IRON MAN", "BLACK WIDOW", "THOR", "HULK", "HAWKEYE", "ANT-MAN", "CAPTAIN MARVEL", "NEBULA", "VALKYRIE", "WAR MACHINE", "ROCKET"]

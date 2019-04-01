@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
-//@IBOutlet weak var charNameHeader: UILabel!
 
-
-class CharViewController: UIViewController {
+class CharViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    var avPlayer : AVAudioPlayer!
     
     var sound: Sounds?
     var sounds = [Sounds]()
@@ -34,15 +35,8 @@ class CharViewController: UIViewController {
         
         charCollectionView.delegate = self
         charCollectionView.dataSource = self
-        charCollectionView.reloadData()
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        charCollectionView.reloadData()
     }
     
-}
-
-extension CharViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return sounds.count
     }
@@ -50,20 +44,41 @@ extension CharViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "soundCell", for: indexPath) as! CharCollectionViewCell
         cell.layer.cornerRadius = 5
-
+        
         cell.contentView.layer.masksToBounds = false
         cell.backgroundColor = cellColor
-
         
         let Soundz = sounds[indexPath.item]
         cell.statementSound.text = Soundz.statement
-        cell.file = self
         
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        print("Selected cell named: \(sounds[indexPath.item])")
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let fileName = sounds[(indexPath as NSIndexPath).item].file
+        let audioPlayer: AVAudioPlayer?
+        let url = URL(
+            fileURLWithPath: Bundle.main.path(
+                forResource: fileName,
+                ofType: "aifc")!)
+        
+        do {
+            
+            try audioPlayer = AVAudioPlayer(contentsOf: url)
+            if let sound = audioPlayer {
+                avPlayer = sound
+                avPlayer.prepareToPlay()
+                avPlayer.play()
+            }
+        } catch {
+            print ("Could not create audio player.")
+        }
+        
     }
+    
 }
+
+
+
+
+
