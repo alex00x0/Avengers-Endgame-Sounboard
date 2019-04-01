@@ -18,23 +18,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5zr-ER-56Y">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="5zr-ER-56Y">
+                                <rect key="frame" x="-5" y="-5" width="424" height="906"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fm8-T5-eCK" userLabel="Alive">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="440.5"/>
-                                        <color key="backgroundColor" red="0.5454830527305603" green="0.13988956809043884" blue="0.22805216908454895" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="26"/>
-                                        <state key="normal" title="THE AVENGERS"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="424" height="440.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="28"/>
+                                        <state key="normal" title="THE AVENGERS">
+                                            <color key="titleColor" red="0.83769427910052907" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="OnG-1d-p4g" kind="presentation" identifier="AvengersSegue" id="JEp-yd-MPu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGH-IB-9Ql" userLabel="Dead">
-                                        <rect key="frame" x="0.0" y="455.5" width="414" height="440.5"/>
-                                        <color key="backgroundColor" red="0.68035334348678589" green="0.66978240013122559" blue="0.69503462314605713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="26"/>
-                                        <state key="normal" title="THE FALLEN"/>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGH-IB-9Ql" userLabel="Dead">
+                                        <rect key="frame" x="0.0" y="465.5" width="424" height="440.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="28"/>
+                                        <state key="normal" title="THE FALLEN">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="0.84968171296296291" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="0.84968171299999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <segue destination="uwm-gX-DXZ" kind="presentation" identifier="FallenSegue" id="Dcy-ln-Y5B"/>
                                         </connections>
@@ -42,12 +69,12 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.06052640825510025" green="0.028324451297521591" blue="0.10832921415567398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="5zr-ER-56Y" secondAttribute="bottom" id="2mp-pR-YeS"/>
-                            <constraint firstAttribute="trailing" secondItem="5zr-ER-56Y" secondAttribute="trailing" id="6fM-9l-ofG"/>
-                            <constraint firstItem="5zr-ER-56Y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Mcm-Du-4ha"/>
-                            <constraint firstItem="5zr-ER-56Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="R5U-32-gF4"/>
+                            <constraint firstAttribute="bottom" secondItem="5zr-ER-56Y" secondAttribute="bottom" constant="-5" id="2mp-pR-YeS"/>
+                            <constraint firstAttribute="trailing" secondItem="5zr-ER-56Y" secondAttribute="trailing" constant="-5" id="6fM-9l-ofG"/>
+                            <constraint firstItem="5zr-ER-56Y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-5" id="Mcm-Du-4ha"/>
+                            <constraint firstItem="5zr-ER-56Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-5" id="R5U-32-gF4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
