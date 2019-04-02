@@ -28,7 +28,7 @@ class AvengersViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let width = (view.frame.width - 40) / 2
+        let width = (view.frame.width - 60) / 2
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)
     }
@@ -45,7 +45,7 @@ extension AvengersViewController: UICollectionViewDelegate, UICollectionViewData
         let chars = avengers[indexPath.item]
 
         cell.avengerNameLabel.text = chars.name
-        cell.avengerImage.image = chars.image
+        //cell.avengerImage.image = chars.image
         return cell
     }
     

@@ -28,7 +28,7 @@ class FallenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let width = (view.frame.width - 40) / 2
+        let width = (view.frame.width - 60) / 2
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: width)
     }
@@ -47,7 +47,7 @@ extension FallenViewController: UICollectionViewDelegate, UICollectionViewDataSo
         
         
         cell.fallenNameLabel.text = chars.name
-        cell.fallenImage.image = chars.image
+        //cell.fallenImage.image = chars.image
         
         return cell
     }

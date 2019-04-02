@@ -31,7 +31,7 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
         charNameLabel.text = charName
         let layout = charCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         let width = (view.frame.width - 60) / 2
-        layout.itemSize = CGSize(width: width, height: width/1.8)
+        layout.itemSize = CGSize(width: width, height: width/1.7)
         
         charCollectionView.delegate = self
         charCollectionView.dataSource = self
@@ -46,7 +46,7 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
         cell.layer.cornerRadius = 5
         
         cell.contentView.layer.masksToBounds = false
-        cell.backgroundColor = cellColor
+        //cell.backgroundColor = cellColor
         
         let Soundz = sounds[indexPath.item]
         cell.statementSound.text = Soundz.statement
