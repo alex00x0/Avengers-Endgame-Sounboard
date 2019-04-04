@@ -1,60 +1,51 @@
 //
-//  CharViewController.swift
+//  ThanosViewController.swift
 //  Avengers: Endgame Sounboard
 //
-//  Created by Alexander Niehaus on 3/30/19.
+//  Created by Alexander Niehaus on 4/4/19.
 //  Copyright © 2019 AlexanderNiehaus. All rights reserved.
 //
 
 import UIKit
 import AVFoundation
 
-class CharViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ThanosViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var avPlayer : AVAudioPlayer!
+    var thanos : [Sounds] = [Sounds(statement: "A", file: "A")]
     
-    var sound: Sounds?
-    var sounds = [Sounds]()
-    var charName: String!
-    var cellColor : UIColor!
-
-    @IBOutlet weak var charCollectionView: UICollectionView!
+    @IBOutlet weak var thanosCollectionView: UICollectionView!
     
-    @IBOutlet weak var charNameLabel: UILabel!
     @IBAction func unwindWithSwipe(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        charNameLabel.text = charName
-        let layout = charCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        let layout = thanosCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         let width = (view.frame.width - 60) / 2
         layout.itemSize = CGSize(width: width, height: width/1.7)
-        
-        charCollectionView.delegate = self
-        charCollectionView.dataSource = self
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return sounds.count
+        return thanos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "soundCell", for: indexPath) as! CharCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "thanosCell", for: indexPath) as! ThanosCollectionViewCell
         cell.layer.cornerRadius = 5
         
         cell.contentView.layer.masksToBounds = false
         //cell.backgroundColor = cellColor
         
-        let Soundz = sounds[indexPath.item]
+        let Soundz = thanos[indexPath.item]
         cell.statementSound.text = Soundz.statement
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let fileName = sounds[(indexPath as NSIndexPath).item].file
+        let fileName = thanos[(indexPath as NSIndexPath).item].file
         let audioPlayer: AVAudioPlayer?
         let url = URL(
             fileURLWithPath: Bundle.main.path(
@@ -76,8 +67,3 @@ class CharViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
 }
-
-
-
-
-

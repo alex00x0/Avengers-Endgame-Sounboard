@@ -45,6 +45,7 @@ extension AvengersViewController: UICollectionViewDelegate, UICollectionViewData
         let chars = avengers[indexPath.item]
 
         cell.avengerNameLabel.text = chars.name
+        //cell.avengerNameLabel.textColor = chars.color
         //cell.avengerImage.image = chars.image
         return cell
     }

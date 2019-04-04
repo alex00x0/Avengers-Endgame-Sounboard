@@ -13,10 +13,6 @@
 		C910F57F224F8789009C1B0E /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910F57E224F8789009C1B0E /* Sounds.swift */; };
 		C910F583224F9206009C1B0E /* CharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910F582224F9206009C1B0E /* CharViewController.swift */; };
 		C910F585224F922B009C1B0E /* CharCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910F584224F922B009C1B0E /* CharCollectionViewCell.swift */; };
-		C942C885225282C00017BDFB /* B.aifc in Resources */ = {isa = PBXBuildFile; fileRef = C942C884225282C00017BDFB /* B.aifc */; };
-		C942C888225282CA0017BDFB /* D.aifc in Resources */ = {isa = PBXBuildFile; fileRef = C942C886225282CA0017BDFB /* D.aifc */; };
-		C942C889225282CA0017BDFB /* C.aifc in Resources */ = {isa = PBXBuildFile; fileRef = C942C887225282CA0017BDFB /* C.aifc */; };
-		C942C88A2252843A0017BDFB /* A.aifc in Resources */ = {isa = PBXBuildFile; fileRef = C910F586224FD906009C1B0E /* A.aifc */; };
 		C97CC3B3224D7EC600576A3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97CC3B2224D7EC600576A3B /* AppDelegate.swift */; };
 		C97CC3B5224D7EC600576A3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97CC3B4224D7EC600576A3B /* ViewController.swift */; };
 		C97CC3B8224D7EC600576A3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97CC3B6224D7EC600576A3B /* Main.storyboard */; };
@@ -24,6 +20,12 @@
 		C97CC3BD224D7EC600576A3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C97CC3BB224D7EC600576A3B /* LaunchScreen.storyboard */; };
 		C97CC3CC224E645400576A3B /* AvengersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97CC3CB224E645400576A3B /* AvengersViewController.swift */; };
 		C97CC3CE224E645D00576A3B /* FallenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97CC3CD224E645D00576A3B /* FallenViewController.swift */; };
+		C9A4FD892255FF1600F4FD77 /* A.aifc in Resources */ = {isa = PBXBuildFile; fileRef = C9A4FD882255FF1600F4FD77 /* A.aifc */; };
+		C9A4FD8E2255FFA800F4FD77 /* B.aifc in Resources */ = {isa = PBXBuildFile; fileRef = C9A4FD8A2255FF1D00F4FD77 /* B.aifc */; };
+		C9A4FD8F2255FFB600F4FD77 /* C.aifc in Resources */ = {isa = PBXBuildFile; fileRef = C9A4FD8B2255FF2100F4FD77 /* C.aifc */; };
+		C9A4FD902255FFBA00F4FD77 /* D.aifc in Resources */ = {isa = PBXBuildFile; fileRef = C9A4FD8C2255FF2400F4FD77 /* D.aifc */; };
+		C9CD376D2255F61200E04C98 /* ThanosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD376C2255F61200E04C98 /* ThanosViewController.swift */; };
+		C9CD376F2255F63700E04C98 /* ThanosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CD376E2255F63700E04C98 /* ThanosCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +35,6 @@
 		C910F57E224F8789009C1B0E /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
 		C910F582224F9206009C1B0E /* CharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharViewController.swift; sourceTree = "<group>"; };
 		C910F584224F922B009C1B0E /* CharCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharCollectionViewCell.swift; sourceTree = "<group>"; };
-		C910F586224FD906009C1B0E /* A.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = A.aifc; sourceTree = "<group>"; };
-		C942C884225282C00017BDFB /* B.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = B.aifc; sourceTree = "<group>"; };
-		C942C886225282CA0017BDFB /* D.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = D.aifc; sourceTree = "<group>"; };
-		C942C887225282CA0017BDFB /* C.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = C.aifc; sourceTree = "<group>"; };
 		C97CC3AF224D7EC600576A3B /* Avengers: Endgame Sounboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Avengers: Endgame Sounboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97CC3B2224D7EC600576A3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C97CC3B4224D7EC600576A3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +44,33 @@
 		C97CC3BE224D7EC600576A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C97CC3CB224E645400576A3B /* AvengersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvengersViewController.swift; sourceTree = "<group>"; };
 		C97CC3CD224E645D00576A3B /* FallenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallenViewController.swift; sourceTree = "<group>"; };
+		C9A4FD882255FF1600F4FD77 /* A.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = A.aifc; sourceTree = "<group>"; };
+		C9A4FD8A2255FF1D00F4FD77 /* B.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = B.aifc; sourceTree = "<group>"; };
+		C9A4FD8B2255FF2100F4FD77 /* C.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = C.aifc; sourceTree = "<group>"; };
+		C9A4FD8C2255FF2400F4FD77 /* D.aifc */ = {isa = PBXFileReference; lastKnownFileType = file; path = D.aifc; sourceTree = "<group>"; };
+		C9A4FD9A2256002400F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FD9C2256002400F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FD9E2256002400F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDA02256002500F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDA22256002500F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDA42256002500F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDA62256002600F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDA82256002600F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDAA2256002600F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDAC2256002600F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDAE2256002700F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDB02256002700F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDB22256002700F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDB42256002700F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDB62256002800F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDB82256002800F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDBA2256002800F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDBC2256002800F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDBE2256002900F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDC02256002900F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9A4FDC22256002900F4FD77 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		C9CD376C2255F61200E04C98 /* ThanosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanosViewController.swift; sourceTree = "<group>"; };
+		C9CD376E2255F63700E04C98 /* ThanosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanosCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +84,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C942C82B225161C20017BDFB /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				C910F586224FD906009C1B0E /* A.aifc */,
-				C942C884225282C00017BDFB /* B.aifc */,
-				C942C887225282CA0017BDFB /* C.aifc */,
-				C942C886225282CA0017BDFB /* D.aifc */,
-			);
-			path = Sounds;
-			sourceTree = "<group>";
-		};
 		C97CC3A6224D7EC500576A3B = {
 			isa = PBXGroup;
 			children = (
@@ -89,8 +103,8 @@
 		C97CC3B1224D7EC600576A3B /* Avengers: Endgame Sounboard */ = {
 			isa = PBXGroup;
 			children = (
+				C9A4FD872255FF0900F4FD77 /* Sounds */,
 				C97CC3B2224D7EC600576A3B /* AppDelegate.swift */,
-				C942C82B225161C20017BDFB /* Sounds */,
 				C97CC3C6224E387000576A3B /* Model */,
 				C97CC3C5224E385D00576A3B /* Views */,
 				C97CC3C4224E380300576A3B /* Controllers */,
@@ -109,6 +123,7 @@
 				C97CC3CB224E645400576A3B /* AvengersViewController.swift */,
 				C97CC3CD224E645D00576A3B /* FallenViewController.swift */,
 				C910F582224F9206009C1B0E /* CharViewController.swift */,
+				C9CD376C2255F61200E04C98 /* ThanosViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -119,6 +134,7 @@
 				C910F578224ED0CD009C1B0E /* AvengerCollectionViewCell.swift */,
 				C910F57A224ED0E2009C1B0E /* FallenCollectionViewCell.swift */,
 				C910F584224F922B009C1B0E /* CharCollectionViewCell.swift */,
+				C9CD376E2255F63700E04C98 /* ThanosCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,6 +146,246 @@
 				C910F57E224F8789009C1B0E /* Sounds.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C9A4FD872255FF0900F4FD77 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FD882255FF1600F4FD77 /* A.aifc */,
+				C9A4FD8A2255FF1D00F4FD77 /* B.aifc */,
+				C9A4FD8B2255FF2100F4FD77 /* C.aifc */,
+				C9A4FD8C2255FF2400F4FD77 /* D.aifc */,
+				C9A4FD912255FFC800F4FD77 /* ANT-MAN */,
+				C9A4FD922255FFDF00F4FD77 /* BLACK PANTHER */,
+				C9A4FD932256001200F4FD77 /* BLACK WIDOW */,
+				C9A4FD972256001B00F4FD77 /* CAPTAIN AMERICA */,
+				C9A4FD952256001B00F4FD77 /* CAPTAIN MARVEL */,
+				C9A4FDA72256002600F4FD77 /* DR.STRANGE */,
+				C9A4FDBB2256002800F4FD77 /* DRAX */,
+				C9A4FDBF2256002900F4FD77 /* FALCON */,
+				C9A4FDAF2256002700F4FD77 /* GAMORA */,
+				C9A4FDA52256002600F4FD77 /* GROOT */,
+				C9A4FD9B2256002400F4FD77 /* HAWKEYE */,
+				C9A4FDBD2256002900F4FD77 /* HULK */,
+				C9A4FDB12256002700F4FD77 /* IRON MAN */,
+				C9A4FDB32256002700F4FD77 /* LOKI */,
+				C9A4FD9D2256002400F4FD77 /* NEBULA */,
+				C9A4FDAD2256002700F4FD77 /* NICK FURY */,
+				C9A4FDA12256002500F4FD77 /* ROCKET */,
+				C9A4FDB52256002800F4FD77 /* SCARLET WITCH */,
+				C9A4FD992256002400F4FD77 /* SHURI */,
+				C9A4FDC12256002900F4FD77 /* SPIDER-MAN */,
+				C9A4FDA32256002500F4FD77 /* STAR-LORD */,
+				C9A4FDA92256002600F4FD77 /* THOR */,
+				C9A4FDAB2256002600F4FD77 /* VALKYRIE */,
+				C9A4FDB72256002800F4FD77 /* VISION  */,
+				C9A4FDB92256002800F4FD77 /* WAR MACHINE */,
+				C9A4FD9F2256002500F4FD77 /* WINTER SOLDIER */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		C9A4FD912255FFC800F4FD77 /* ANT-MAN */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "ANT-MAN";
+			sourceTree = "<group>";
+		};
+		C9A4FD922255FFDF00F4FD77 /* BLACK PANTHER */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "BLACK PANTHER";
+			sourceTree = "<group>";
+		};
+		C9A4FD932256001200F4FD77 /* BLACK WIDOW */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "BLACK WIDOW";
+			sourceTree = "<group>";
+		};
+		C9A4FD952256001B00F4FD77 /* CAPTAIN MARVEL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "CAPTAIN MARVEL";
+			sourceTree = "<group>";
+		};
+		C9A4FD972256001B00F4FD77 /* CAPTAIN AMERICA */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "CAPTAIN AMERICA";
+			sourceTree = "<group>";
+		};
+		C9A4FD992256002400F4FD77 /* SHURI */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FD9A2256002400F4FD77 /* Contents.json */,
+			);
+			path = SHURI;
+			sourceTree = "<group>";
+		};
+		C9A4FD9B2256002400F4FD77 /* HAWKEYE */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FD9C2256002400F4FD77 /* Contents.json */,
+			);
+			path = HAWKEYE;
+			sourceTree = "<group>";
+		};
+		C9A4FD9D2256002400F4FD77 /* NEBULA */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FD9E2256002400F4FD77 /* Contents.json */,
+			);
+			path = NEBULA;
+			sourceTree = "<group>";
+		};
+		C9A4FD9F2256002500F4FD77 /* WINTER SOLDIER */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDA02256002500F4FD77 /* Contents.json */,
+			);
+			path = "WINTER SOLDIER";
+			sourceTree = "<group>";
+		};
+		C9A4FDA12256002500F4FD77 /* ROCKET */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDA22256002500F4FD77 /* Contents.json */,
+			);
+			path = ROCKET;
+			sourceTree = "<group>";
+		};
+		C9A4FDA32256002500F4FD77 /* STAR-LORD */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDA42256002500F4FD77 /* Contents.json */,
+			);
+			path = "STAR-LORD";
+			sourceTree = "<group>";
+		};
+		C9A4FDA52256002600F4FD77 /* GROOT */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDA62256002600F4FD77 /* Contents.json */,
+			);
+			path = GROOT;
+			sourceTree = "<group>";
+		};
+		C9A4FDA72256002600F4FD77 /* DR.STRANGE */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDA82256002600F4FD77 /* Contents.json */,
+			);
+			path = DR.STRANGE;
+			sourceTree = "<group>";
+		};
+		C9A4FDA92256002600F4FD77 /* THOR */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDAA2256002600F4FD77 /* Contents.json */,
+			);
+			path = THOR;
+			sourceTree = "<group>";
+		};
+		C9A4FDAB2256002600F4FD77 /* VALKYRIE */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDAC2256002600F4FD77 /* Contents.json */,
+			);
+			path = VALKYRIE;
+			sourceTree = "<group>";
+		};
+		C9A4FDAD2256002700F4FD77 /* NICK FURY */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDAE2256002700F4FD77 /* Contents.json */,
+			);
+			path = "NICK FURY";
+			sourceTree = "<group>";
+		};
+		C9A4FDAF2256002700F4FD77 /* GAMORA */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDB02256002700F4FD77 /* Contents.json */,
+			);
+			path = GAMORA;
+			sourceTree = "<group>";
+		};
+		C9A4FDB12256002700F4FD77 /* IRON MAN */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDB22256002700F4FD77 /* Contents.json */,
+			);
+			path = "IRON MAN";
+			sourceTree = "<group>";
+		};
+		C9A4FDB32256002700F4FD77 /* LOKI */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDB42256002700F4FD77 /* Contents.json */,
+			);
+			path = LOKI;
+			sourceTree = "<group>";
+		};
+		C9A4FDB52256002800F4FD77 /* SCARLET WITCH */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDB62256002800F4FD77 /* Contents.json */,
+			);
+			path = "SCARLET WITCH";
+			sourceTree = "<group>";
+		};
+		C9A4FDB72256002800F4FD77 /* VISION  */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDB82256002800F4FD77 /* Contents.json */,
+			);
+			path = "VISION ";
+			sourceTree = "<group>";
+		};
+		C9A4FDB92256002800F4FD77 /* WAR MACHINE */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDBA2256002800F4FD77 /* Contents.json */,
+			);
+			path = "WAR MACHINE";
+			sourceTree = "<group>";
+		};
+		C9A4FDBB2256002800F4FD77 /* DRAX */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDBC2256002800F4FD77 /* Contents.json */,
+			);
+			path = DRAX;
+			sourceTree = "<group>";
+		};
+		C9A4FDBD2256002900F4FD77 /* HULK */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDBE2256002900F4FD77 /* Contents.json */,
+			);
+			path = HULK;
+			sourceTree = "<group>";
+		};
+		C9A4FDBF2256002900F4FD77 /* FALCON */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDC02256002900F4FD77 /* Contents.json */,
+			);
+			path = FALCON;
+			sourceTree = "<group>";
+		};
+		C9A4FDC12256002900F4FD77 /* SPIDER-MAN */ = {
+			isa = PBXGroup;
+			children = (
+				C9A4FDC22256002900F4FD77 /* Contents.json */,
+			);
+			path = "SPIDER-MAN";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,12 +446,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C942C888225282CA0017BDFB /* D.aifc in Resources */,
+				C9A4FD892255FF1600F4FD77 /* A.aifc in Resources */,
 				C97CC3BD224D7EC600576A3B /* LaunchScreen.storyboard in Resources */,
-				C942C885225282C00017BDFB /* B.aifc in Resources */,
+				C9A4FD8F2255FFB600F4FD77 /* C.aifc in Resources */,
+				C9A4FD902255FFBA00F4FD77 /* D.aifc in Resources */,
+				C9A4FD8E2255FFA800F4FD77 /* B.aifc in Resources */,
 				C97CC3BA224D7EC600576A3B /* Assets.xcassets in Resources */,
-				C942C88A2252843A0017BDFB /* A.aifc in Resources */,
-				C942C889225282CA0017BDFB /* C.aifc in Resources */,
 				C97CC3B8224D7EC600576A3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,12 +465,14 @@
 			files = (
 				C910F57B224ED0E2009C1B0E /* FallenCollectionViewCell.swift in Sources */,
 				C97CC3B5224D7EC600576A3B /* ViewController.swift in Sources */,
+				C9CD376D2255F61200E04C98 /* ThanosViewController.swift in Sources */,
 				C910F579224ED0CD009C1B0E /* AvengerCollectionViewCell.swift in Sources */,
 				C910F57F224F8789009C1B0E /* Sounds.swift in Sources */,
 				C910F583224F9206009C1B0E /* CharViewController.swift in Sources */,
 				C910F57D224F7845009C1B0E /* Chars.swift in Sources */,
 				C97CC3B3224D7EC600576A3B /* AppDelegate.swift in Sources */,
 				C97CC3CE224E645D00576A3B /* FallenViewController.swift in Sources */,
+				C9CD376F2255F63700E04C98 /* ThanosCollectionViewCell.swift in Sources */,
 				C910F585224F922B009C1B0E /* CharCollectionViewCell.swift in Sources */,
 				C97CC3CC224E645400576A3B /* AvengersViewController.swift in Sources */,
 			);
