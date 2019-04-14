@@ -11,13 +11,26 @@ import UIKit
 class FallenViewController: UIViewController {
     
     var fallen : [Chars] = [
-        Chars(name: "SPIDER-MAN", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.red, sounds: [
+        Chars(name: "SPIDER-MAN", image: UIImage(imageLiteralResourceName: "Spider Man"), color: UIColor.red, sounds: [
             Sounds(statement: "C", file: "C")]),
-        Chars(name: "SHURI", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.purple, sounds: [
+        Chars(name: "BLACK PANTHER", image: UIImage(imageLiteralResourceName: "Black Panther"), color: UIColor.purple, sounds: [
+            Sounds(statement: "D", file: "D")]),
+        Chars(name: "DR.STRANGE", image: UIImage(imageLiteralResourceName: "dr.strange"), color: UIColor.red, sounds: [
+            Sounds(statement: "C", file: "C")]),
+        Chars(name: "GROOT", image: UIImage(imageLiteralResourceName: "Groot"), color: UIColor.purple, sounds: [
+            Sounds(statement: "D", file: "D")]),
+        Chars(name: "LOKI", image: UIImage(imageLiteralResourceName: "Loki"), color: UIColor.red, sounds: [
+            Sounds(statement: "C", file: "C")]),
+        Chars(name: "SCARLETT WITCH", image: UIImage(imageLiteralResourceName: "Scarlett Witch"), color: UIColor.purple, sounds: [
+            Sounds(statement: "D", file: "D")]),
+        Chars(name: "STAR LORD", image: UIImage(imageLiteralResourceName: "Star Lord"), color: UIColor.red, sounds: [
+            Sounds(statement: "C", file: "C")]),
+        Chars(name: "VISION", image: UIImage(imageLiteralResourceName: "Vision"), color: UIColor.purple, sounds: [
+            Sounds(statement: "D", file: "D")]),
+        Chars(name: "WAR MACHINE", image: UIImage(imageLiteralResourceName: "War Machine"), color: UIColor.purple, sounds: [
             Sounds(statement: "D", file: "D")])
     ]
         
-//      ["SPIDER-MAN"  , "SHURI", "BLACK PANTHER", "DR.STRANGE", "NICK FURY", "VISION", "SCARLET WITCH", "GAMORA", "DRAX", "WINTER SOLDIER", "FALCON", "STAR-LORD", "LOKI", "GROOT"]
 
     @IBOutlet var rightSwipeRecognizer: UISwipeGestureRecognizer!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -46,7 +59,7 @@ extension FallenViewController: UICollectionViewDelegate, UICollectionViewDataSo
         let chars = fallen[indexPath.item]
         
         cell.fallenNameLabel.text = chars.name
-        //cell.fallenImage.image = chars.image
+        cell.fallenImage.image = chars.image
         
         return cell
     }

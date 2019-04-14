@@ -11,13 +11,25 @@ import UIKit
 class AvengersViewController: UIViewController {
     
     var avengers : [Chars] = [
-        Chars(name: "CAPTAIN AMERICA", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.red, sounds: [
+        Chars(name: "CAPTAIN AMERICA", image: UIImage(imageLiteralResourceName: "Captain America"), color: UIColor.red, sounds: [
             Sounds(statement: "A", file: "A")]),
-        Chars(name: "IRON MAN", image: UIImage(imageLiteralResourceName: "all avengers"), color: UIColor.yellow, sounds: [
-            Sounds(statement: "B", file: "B")])
+        Chars(name: "IRON MAN", image: UIImage(imageLiteralResourceName: "Iron Man"), color: UIColor.yellow, sounds: [
+            Sounds(statement: "B", file: "B")]),
+        Chars(name: "BLACK WIDOW", image: UIImage(imageLiteralResourceName: "Black Widow"), color: UIColor.red, sounds: [
+            Sounds(statement: "A", file: "A")]),
+        Chars(name: "THOR", image: UIImage(imageLiteralResourceName: "Thor"), color: UIColor.yellow, sounds: [
+            Sounds(statement: "B", file: "B")]),
+        Chars(name: "HULK", image: UIImage(imageLiteralResourceName: "HULK"), color: UIColor.red, sounds: [
+            Sounds(statement: "A", file: "A")]),
+        Chars(name: "ANT-MAN", image: UIImage(imageLiteralResourceName: "Ant-Man"), color: UIColor.yellow, sounds: [
+            Sounds(statement: "B", file: "B")]),
+        Chars(name: "CAPTAIN MARVEL", image: UIImage(imageLiteralResourceName: "Captain Marvel"), color: UIColor.red, sounds: [
+            Sounds(statement: "A", file: "A")]),
+        Chars(name: "WAR MACHINE", image: UIImage(imageLiteralResourceName: "War Machine"), color: UIColor.yellow, sounds: [
+            Sounds(statement: "B", file: "B")]),
+        Chars(name: "ROCKET", image: UIImage(imageLiteralResourceName: "Rocket"), color: UIColor.red, sounds: [
+            Sounds(statement: "A", file: "A")])
     ]
-        
-//        ["CAPTAIN AMERICA", "IRON MAN", "BLACK WIDOW", "THOR", "HULK", "HAWKEYE", "ANT-MAN", "CAPTAIN MARVEL", "NEBULA", "VALKYRIE", "WAR MACHINE", "ROCKET"]
 
     @IBOutlet var rightSwipeRecognizer: UISwipeGestureRecognizer!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -46,7 +58,7 @@ extension AvengersViewController: UICollectionViewDelegate, UICollectionViewData
 
         cell.avengerNameLabel.text = chars.name
         //cell.avengerNameLabel.textColor = chars.color
-        //cell.avengerImage.image = chars.image
+        cell.avengerImage.image = chars.image
         return cell
     }
     
